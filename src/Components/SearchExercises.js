@@ -32,6 +32,11 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart}) => {
          )
          setSearch('')
          setExercises(seacrhedExercises)
+         window.scroll({
+          top: 1875,
+          left: 100,
+          behavior: "smooth",
+        });
        }
    }
 
@@ -45,7 +50,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart}) => {
         <TextField height='76px' placeholder='Search Exercises' type='text' 
            sx={{ input: { fontWeight: '700', border: 'none', borderRadius: '4px'}, width: { lg: '800px', xs: '350px'}, backgroundColor: '#fff', borderRadius: '40px' }} 
            value={search} onChange={(e) => setSearch(e.target.value.toLowerCase())} />
-          <Button className='search-btn' onClick={searchHandler}
+          <Button className='search-btn' onClick={searchHandler} 
            sx={{ bgcolor: '#ff2625', color: '#fff', textTransform: 'none', width: { lg: '175px', xs: '80px'}, fontSize: { lg: '20px', xs: '14px'}, height: '56px', position: 'absolute', right: '0'}}>
             Search
           </Button>   

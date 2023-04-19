@@ -10,7 +10,7 @@ const BodyPart = ({ item, bodyPart, setBodyPart }) => {
          backgroundColor: '#fff', borderBottomLeftRadius: '20px', width: '270px', height: '280px', gap: '47px', cursor: 'pointer'
       }}
        onClick={() => {setBodyPart(item)
-           window.scrollTo({ top: '1800', left: '100', behavior: 'smooth'})
+           window.scrollTo({ top: '1850', left: '100', behavior: 'smooth'})
       }}
 
       >
